@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atomic-wars",
+        "command": "atomic-wars:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atomic-wars",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atomic-wars:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

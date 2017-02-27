@@ -1,0 +1,18 @@
+{
+  "name": "atomic-wars",
+  "main": "./lib/atomic-wars",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atomic-wars:toggle"
+  },
+  "repository": "https://github.com/atom/atomic-wars",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
