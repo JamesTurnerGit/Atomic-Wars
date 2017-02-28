@@ -1,6 +1,6 @@
-'use babel';
+ 'use babel';
 
-import AtomicWarsModel from '../lib/atomic-wars-model';
+// import AtomicWarsModel from '../lib/atomic-wars-model';
 
 describe('AtomicWarsModel', () => {
   let workspaceElement, activationPromise;
@@ -11,7 +11,7 @@ describe('AtomicWarsModel', () => {
 
   describe('new', () => {
     it('creates some windows', () => {
-    
+
       atom.commands.dispatch(workspaceElement, 'atomic-wars:new');
 
       waitsForPromise(() => {
