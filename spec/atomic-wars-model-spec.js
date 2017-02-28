@@ -7,21 +7,25 @@ describe('AtomicWarsModel', () => {
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
     activationPromise = atom.packages.activatePackage('atomic-wars');
+    atom.commands.dispatch(workspaceElement, 'atomic-wars:new');
+
+    waitsForPromise(() => {
+      return activationPromise;
+    });
   });
 
   describe('new', () => {
     it('creates some windows', () => {
-
-      atom.commands.dispatch(workspaceElement, 'atomic-wars:new');
-
-      waitsForPromise(() => {
-        return activationPromise;
-      });
-
       runs(() => {
         panes = atom.workspace.getPaneItems()
         expect(panes.length).toBe(3)
       });
     });
+
+    it('names panes correctly', () => {
+      runs(() => {
+
+      })
+    })
   })
 });
