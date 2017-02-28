@@ -13,12 +13,19 @@ describe('AtomicWarsWindowManager', () => {
   });
 
   describe('setupWindows', () => {
-    it('creates some windows', () => {
+    it('creates some text editors', () => {
       runs(() => {
-        panes = atom.workspace.getPaneItems()
-        expect(panes.length).toBe(3)
+        items = atom.workspace.getPaneItems()
+        expect(items.length).toBe(3)
       });
     });
+
+    it('creates some panes', () => {
+      runs(() => {
+        items = atom.workspace.getPanes()
+        expect(items.length).toBe(3)
+      })
+    })
 
     it('names panes correctly', () => {
       runs(() => {
