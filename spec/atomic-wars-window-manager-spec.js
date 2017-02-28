@@ -22,8 +22,8 @@ describe('AtomicWarsWindowManager', () => {
 
     it('creates some panes', () => {
       runs(() => {
-        items = atom.workspace.getPanes()
-        expect(items.length).toBe(3)
+        panes = atom.workspace.getPanes()
+        expect(panes.length).toBe(3)
       })
     })
 
