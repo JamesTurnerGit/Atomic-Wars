@@ -16,7 +16,13 @@ describe('AtomicWars-codewarsAPI', () => {
   describe('new', () => {
     it('creates some sdaf', () => {
       runs(() => {
-        console.log (atom.packages.loadedPackages["atomic-wars"].mainModule)
+        var url = 'https://www.codewars.com/api/v1/code-challenges/javascript/train'
+        var result = atom.packages.loadedPackages["atomic-wars"].mainModule.Model.CodeWarsAPI.getKata(url)
+        console.log(result)
+        result.then(function(xhr){
+          console.log(xhr)
+          expect(xhr.author).toBe("Bob Eyre");
+        });
       });
     });
   });
