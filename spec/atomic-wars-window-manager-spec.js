@@ -12,7 +12,7 @@ describe('AtomicWarsWindowManager', () => {
     });
   });
 
-  describe('new', () => {
+  describe('setupWindows', () => {
     it('creates some windows', () => {
       runs(() => {
         panes = atom.workspace.getPaneItems()
