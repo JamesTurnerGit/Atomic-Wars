@@ -12,35 +12,28 @@ describe('AtomicWarsWindowManager', () => {
     apiObject.author = "Authors name"
     apiObject.session.setup = "this is the starting codeblock"
     apiObject.session.exampleFixture = "this is the starting testblocks"
+    return apiObject
   }
 
   let activationPromise, wMan;
-  beforeEach(() => {
+  beforeAll(() => {
+
+    //TODO i.e NEVER fix these tests
     wMan = new WindowManager
 
     wMan.setupWindows('language name', fakeApi())
     // activationPromise = atom.packages.activatePackage('atomic-wars');
 
-//     var myFirstPromise = new Promise(function(resolve, reject){
-//     //We call resolve(...) when what we were doing async succeeded, and reject(...) when it failed.
-//     //In this example, we use setTimeout(...) to simulate async code.
-//     //In reality, you will probabally using something like XHR or an HTML5 API.
-//     // setTimeout(function(){
-//         resolve("Success!"); //Yay! Everything went well!
-//     // }, 250);
-// });
-//
-//     waitsForPromise(() => {
-//       return myFirstPromise
-//     });
+    // waitsForPromise(() => {
+    // });
   });
 
   describe('setupWindows', () => {
     it('creates some text editors', () => {
-      // runs(() => {
+      runs(() => {
         items = atom.workspace.getPaneItems()
         expect(items.length).toBe(3)
-      // });
+      });
     });
 
     it('creates some panes', () => {
