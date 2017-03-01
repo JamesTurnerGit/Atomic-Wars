@@ -1,15 +1,34 @@
 'use babel';
 
-describe('AtomicWarsWindowManager', () => {
-  let workspaceElement, activationPromise;
-  beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('atomic-wars');
-    atom.commands.dispatch(workspaceElement, 'atomic-wars:new');
+import WindowManager from '../lib/window-manager';
 
-    waitsForPromise(() => {
-      return activationPromise;
-    });
+describe('AtomicWarsWindowManager', () => {
+
+  fakeApi = function(){
+    return new Promise(function (resolve) {
+      var apiObject = {}
+      apiObject.session = {}
+      apiObject.name = "name of kata"
+      apiObject.description = "some description text"
+      apiObject.author = "Authors name"
+      apiObject.session.setup = "this is the starting codeblock"
+      apiObject.session.exampleFixture = "this is the starting testblocks"
+      resolve(apiObject)
+    })
+  }
+
+  let activationPromise, wMan;
+  beforeEach(() => {
+    wMan = new WindowManager
+
+    wMan.setupWindows('language name', fakeApi())
+    // activationPromise = atom.packages.activatePackage('atomic-wars');
+
+
+
+    // waitsForPromise(() => {
+    //   return activationPromise;
+    // });
   });
 
   describe('setupWindows', () => {
@@ -32,6 +51,7 @@ describe('AtomicWarsWindowManager', () => {
         descriptionWindowTitle = atom.workspace.getPaneItems()[0].getTitle()
         codeWindowTitle        = atom.workspace.getPaneItems()[1].getTitle()
         testsWindowTitle       = atom.workspace.getPaneItems()[2].getTitle()
+        console.log(codeWindowTitle)
         expect(descriptionWindowTitle).toBe("description")
         expect(testsWindowTitle).toBe("tests")
         expect(codeWindowTitle).toBe("code")
