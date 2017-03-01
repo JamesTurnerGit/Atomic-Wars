@@ -12,14 +12,13 @@ describe('AtomicWars-codewarsAPI', () => {
   describe('new', () => {
     it('returns a promise that resolves into a kata json', () => {
       var url = 'https://www.codewars.com/api/v1/code-challenges/javascript/train'
+      atom.config.set('atomic-wars.CodeWarsAPIkey','4okdeUCSuvfPs6W9vqr5')// TODO: clean this out
       var result = CWapi.getKata(url)
-      console.log(result)
       waitsForPromise(() =>
-        CWapi.getKata(url).then((messages) => {
-          console.log(messages)
+        result.then((messages) => {
+          expect(messages.author).toBeDefined();
         }),
       );
-      console.log(result)
     });
   });
 })
