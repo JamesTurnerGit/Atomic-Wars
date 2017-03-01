@@ -3,10 +3,10 @@
 describe('AtomicWarsWindowManager', () => {
   let workspaceElement, activationPromise;
   beforeEach(() => {
-
     workspaceElement = atom.views.getView(atom.workspace);
     activationPromise = atom.packages.activatePackage('atomic-wars');
     atom.commands.dispatch(workspaceElement, 'atomic-wars:new');
+
     waitsForPromise(() => {
       return activationPromise;
     });
