@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "request": "^2.73.0",
-    "inspect": "0.0.2"
+    "inspect": "0.0.2",
+    "path": "3.10.10"
   }
 }
