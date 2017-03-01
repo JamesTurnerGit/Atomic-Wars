@@ -5,16 +5,13 @@ import WindowManager from '../lib/window-manager';
 describe('AtomicWarsWindowManager', () => {
 
   fakeApi = function(){
-    return new Promise(function (resolve) {
-      var apiObject = {}
-      apiObject.session = {}
-      apiObject.name = "name of kata"
-      apiObject.description = "some description text"
-      apiObject.author = "Authors name"
-      apiObject.session.setup = "this is the starting codeblock"
-      apiObject.session.exampleFixture = "this is the starting testblocks"
-      resolve(apiObject)
-    })
+    var apiObject = {}
+    apiObject.session = {}
+    apiObject.name = "name of kata"
+    apiObject.description = "some description text"
+    apiObject.author = "Authors name"
+    apiObject.session.setup = "this is the starting codeblock"
+    apiObject.session.exampleFixture = "this is the starting testblocks"
   }
 
   let activationPromise, wMan;
@@ -24,19 +21,26 @@ describe('AtomicWarsWindowManager', () => {
     wMan.setupWindows('language name', fakeApi())
     // activationPromise = atom.packages.activatePackage('atomic-wars');
 
-
-
-    // waitsForPromise(() => {
-    //   return activationPromise;
-    // });
+//     var myFirstPromise = new Promise(function(resolve, reject){
+//     //We call resolve(...) when what we were doing async succeeded, and reject(...) when it failed.
+//     //In this example, we use setTimeout(...) to simulate async code.
+//     //In reality, you will probabally using something like XHR or an HTML5 API.
+//     // setTimeout(function(){
+//         resolve("Success!"); //Yay! Everything went well!
+//     // }, 250);
+// });
+//
+//     waitsForPromise(() => {
+//       return myFirstPromise
+//     });
   });
 
   describe('setupWindows', () => {
     it('creates some text editors', () => {
-      runs(() => {
+      // runs(() => {
         items = atom.workspace.getPaneItems()
         expect(items.length).toBe(3)
-      });
+      // });
     });
 
     it('creates some panes', () => {
