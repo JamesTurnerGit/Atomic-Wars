@@ -48,7 +48,6 @@ describe('AtomicWarsWindowManager', () => {
         descriptionWindowTitle = atom.workspace.getPaneItems()[0].getTitle()
         codeWindowTitle        = atom.workspace.getPaneItems()[1].getTitle()
         testsWindowTitle       = atom.workspace.getPaneItems()[2].getTitle()
-        console.log(codeWindowTitle)
         expect(descriptionWindowTitle).toBe("description")
         expect(testsWindowTitle).toBe("tests")
         expect(codeWindowTitle).toBe("code")
