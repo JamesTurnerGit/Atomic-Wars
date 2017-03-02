@@ -1,9 +1,9 @@
 {
   "name": "atomic-wars",
   "main": "./lib/atomic-wars",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "version": "0.8.0",
+  "description": "A package for downloading kata from codewars and working on them locally",
+  "keywords": ["git", "codewars","kata","github"],
   "activationCommands": {
     "atom-workspace": "atomic-wars:new"
   },
