@@ -13,9 +13,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "path": ">=0.0.1",
-    "simple-git": ">=0.0.1",
     "chokidar": "1.6.1",
-    "node-watch": "0.4.1"
+    "ggit": "1.13.6",
+    "node-watch": "0.4.1",
+    "path": ">=0.0.1",
+    "simple-git": ">=0.0.1"
   }
 }
