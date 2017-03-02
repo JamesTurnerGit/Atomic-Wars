@@ -22,6 +22,14 @@
 ## <a name="Task">Task</a>
 Codewars Atom package that creates and manages a GitHub repo and lets you work in your preferred environment.
 
+### Installation
+To install the Atom Package
+```
+$ git clone https://github.com/JamesTurnerGit/Atomic-Wars
+$ cd Atomic-Wars
+$ apm install
+```
+
 ## <a name="Stories">User Stories</a>
 MVP
 ```
