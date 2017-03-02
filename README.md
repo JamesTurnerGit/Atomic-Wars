@@ -1,5 +1,5 @@
 # Atomic-Wars Atom Package
-#### Technologies: Javascript, Jasmine, Atom
+#### Technologies: Javascript, Jasmine, Atom, [Waffle] (https://waffle.io/JamesTurnerGit/Atomic-Wars)
 ### [Makers Academy] (http://www.makersacademy.com) - Week 9 Group Project
 
 <p align="center">
@@ -14,10 +14,9 @@
 
 ## Index
 * [Task] (#Task)
-* [Technologies] (#Technologies)
 * [Installation] (#Install)
 * [User Stories] (#Stories)
-* [Test Framework] (#Framework)
+* [Usage] (#Usage)
 
 ## <a name="Task">Task</a>
 Codewars Atom package that creates and manages a GitHub repo and lets you work in your preferred environment.
@@ -71,4 +70,11 @@ I would like setup to be reduced
 As a user
 So I can do TDD
 I would like to disable fetching the tests
+```
+
+## <a name="Usage">Usage</a>
+In Atom
+```
+Atomic-Wars: New      # Creates a new Kata
+Atomic-Wars: Submit   # Submits completed Kata to Codewars
 ```
