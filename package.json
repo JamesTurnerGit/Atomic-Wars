@@ -13,6 +13,9 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "path": "3.10.10"
+    "mkdirp": "^0.5.1",
+    "node-watch": "0.4.1",
+    "path": ">=0.0.1",
+    "simple-git": ">=0.0.1"
   }
 }

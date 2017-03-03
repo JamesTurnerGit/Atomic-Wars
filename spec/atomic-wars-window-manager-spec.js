@@ -17,7 +17,7 @@ describe('AtomicWarsWindowManager', () => {
   }
 
   let activationPromise, wMan;
-  beforeAll(() => {
+  beforeEach(() => {
 
     //TODO i.e NEVER fix these tests
     wMan = new WindowManager
