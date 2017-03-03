@@ -1,11 +1,5 @@
 {
   "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle Atomic-Wars",
-        "command": "atomic-wars:toggle"
-      }
-    ]
   },
   "menu": [
     {
@@ -15,9 +9,14 @@
           "label": "Atomic-Wars",
           "submenu": [
             {
-              "label": "Toggle",
+              "label": "New Kata",
               "command": "atomic-wars:new"
+            },
+            {
+              "label": "Submit Kata",
+              "command": "atomic-wars:submit"
             }
+
           ]
         }
       ]

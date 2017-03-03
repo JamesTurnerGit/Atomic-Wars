@@ -23,10 +23,6 @@ describe('AtomicWarsWindowManager', () => {
     wMan = new WindowManager
 
     wMan.setupWindows('language name', fakeApi())
-    // activationPromise = atom.packages.activatePackage('atomic-wars');
-
-    // waitsForPromise(() => {
-    // });
   });
 
   describe('setupWindows', () => {
