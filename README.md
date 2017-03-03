@@ -1,5 +1,5 @@
 # Atomic-Wars Atom Package
-#### Technologies: Javascript, Coffeescript, Jasmine, Atom, [Waffle] (https://waffle.io/JamesTurnerGit/Atomic-Wars)
+#### Technologies: Javascript, Coffeescript, Jasmine, Atom
 ### [Makers Academy] (http://www.makersacademy.com) - Week 9 Group Project
 
 <p align="center">
