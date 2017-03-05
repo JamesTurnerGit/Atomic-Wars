@@ -3,7 +3,12 @@
   "main": "./lib/atomic-wars",
   "version": "0.8.0",
   "description": "A package for downloading kata from codewars and working on them locally",
-  "keywords": ["git", "codewars","kata","github"],
+  "keywords": [
+    "git",
+    "codewars",
+    "kata",
+    "github"
+  ],
   "activationCommands": {
     "atom-workspace": "atomic-wars:new"
   },
@@ -13,9 +18,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "bluebird": "^3.5.0",
+    "chokidar": "^1.6.1",
     "mkdirp": "^0.5.1",
-    "node-watch": "0.4.1",
-    "path": ">=0.0.1",
-    "simple-git": ">=0.0.1"
+    "path": "^0.0.1",
+    "simple-git": "^0.0.1"
   }
 }

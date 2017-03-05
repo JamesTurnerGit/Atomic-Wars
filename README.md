@@ -3,7 +3,7 @@
 ### [Makers Academy] (http://www.makersacademy.com) - Week 9 Group Project
 
 <p align="center">
-  <img src="https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif">
+  <img src="http://2669a4587685f0418577-e2abcae886d16a849f23c79b5c564aec.r88.cf5.rackcdn.com/uploads/AtomicWarsLogo.jpg">
 </p>
 
 ## Team Members
