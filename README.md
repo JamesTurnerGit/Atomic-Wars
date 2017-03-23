@@ -1,7 +1,7 @@
 # Atomic-Wars Atom Package
 #### Technologies: Javascript, Coffeescript, Jasmine, Atom
-### [Makers Academy] (http://www.makersacademy.com) - Week 9 Group Project
-
+### [Makers Academy](http://www.makersacademy.com) - Week 9 Group Project
+this product was undertaken in "practice project" week at makers academy, we set ourselves a project that we were interested in.
 <p align="center">
   <img src="https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif">
 </p>
@@ -13,10 +13,10 @@
 * [Adrian Eyre](https://github.com/adrianeyre)
 
 ## Index
-* [Task] (#Task)
-* [Installation] (#Install)
-* [User Stories] (#Stories)
-* [Usage] (#Usage)
+* [Task](#Task)
+* [Installation](#Install)
+* [User Stories](#Stories)
+* [Usage](#Usage)
 
 ## <a name="Task">Task</a>
 Codewars Atom package that creates and manages a GitHub repo and lets you work in your preferred environment.
