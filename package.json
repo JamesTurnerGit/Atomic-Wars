@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "atomic-wars:new"
   },
-  "repository": "https://github.com/atom/atomic-wars",
+  "repository": "https://github.com/JamesTurnerGit/Atomic-Wars",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
